@@ -11,7 +11,7 @@ window.onload = async () => {
 async function fetchMovieDetails(movieId) {
   try {
     const response = await fetch(
-      `https://learn-with-guvi-book-my-show-backend.onrender.com/movie/${movieId}`
+      `https://book-my-show-backend-7py3.onrender.com/movie/${movieId}`
     );
     const movie = await response.json();
 
@@ -119,7 +119,7 @@ document.getElementById("submitBooking").addEventListener("click", async () => {
 
   try {
     const response = await fetch(
-      "https://learn-with-guvi-book-my-show-backend.onrender.com/movie/book-movie",
+      "https://book-my-show-backend-7py3.onrender.com/movie/book-movie",
       {
         method: "POST",
         headers: {
